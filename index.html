@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[YOUR NAME] | Linux Systems Administrator</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #0b0f14;
+      --card: #111820;
+      --border: #26323d;
+      --text: #e8eef3;
+      --muted: #9ba8b4;
+      --green: #55e6a5;
+      --green-dark: #1fa873;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .terminal-label {
+      color: var(--green);
+      font-family: monospace;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      line-height: 1;
+      margin-bottom: 15px;
+      letter-spacing: -3px;
+    }
+
+    .job-title {
+      color: var(--muted);
+      font-size: 1.5rem;
+      margin-bottom: 25px;
+    }
+
+    .intro {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .command {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 18px;
+      background: #070b0f;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--green);
+      font-family: monospace;
+    }
+
+    section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .number {
+      color: var(--green);
+      font-family: monospace;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .bio {
+      max-width: 800px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      list-style: none;
+    }
+
+    .skills li {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 10px 16px;
+      border-radius: 5px;
+      color: var(--text);
+      font-family: monospace;
+      transition: 0.2s;
+    }
+
+    .skills li:hover {
+      border-color: var(--green);
+      color: var(--green);
+      transform: translateY(-2px);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 25px;
+      border-radius: 8px;
+      transition: 0.25s;
+    }
+
+    .project:hover {
+      border-color: var(--green-dark);
+      transform: translateY(-5px);
+    }
+
+    .project-number {
+      color: var(--green);
+      font-family: monospace;
+      font-size: 13px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .project h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+    }
+
+    .technology {
+      color: var(--green);
+      font-family: monospace;
+      font-size: 12px;
+    }
+
+    footer {
+      padding: 30px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        min-height: 75vh;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      .job-title {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="container">
+      <div class="terminal-label">
+        LINUX / SYSTEMS / INFRASTRUCTURE
+      </div>
+
+      <h1>[YOUR NAME]</h1>
+
+      <p class="job-title">
+        Linux Systems Administrator in Training
+      </p>
+
+      <p class="intro">
+        I'm training as a Linux systems administrator and building hands-on
+        experience with servers, automation, networking, storage, security,
+        virtualization, and system administration.
+      </p>
+
+      <div class="command">
+        $ whoami
+        &nbsp; linux-systems-admin-in-training
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+
+        <div class="section-title">
+          <span class="number">01</span>
+          <h2>About Me</h2>
+        </div>
+
+        <p class="bio">
+          I am currently training to become a Linux systems administrator.
+          My focus is developing practical skills in Linux administration,
+          troubleshooting, automation, networking, security, storage, and
+          virtualization. I enjoy working from the command line, learning how
+          systems work, and building reliable infrastructure that can be
+          maintained and automated.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+
+        <div class="section-title">
+          <span class="number">02</span>
+          <h2>Skills</h2>
+        </div>
+
+        <ul class="skills">
+          <li>Linux</li>
+          <li>Bash</li>
+          <li>systemd</li>
+          <li>Firewalls</li>
+          <li>Permissions</li>
+          <li>Storage</li>
+          <li>Networking</li>
+          <li>apt</li>
+          <li>dnf</li>
+          <li>cron</li>
+          <li>Git</li>
+          <li>Proxmox</li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+
+        <div class="section-title">
+          <span class="number">03</span>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects">
+
+          <!-- PROJECT 1 -->
+          <article class="project">
+            <span class="project-number">
+              PROJECT 01
+            </span>
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+              A self-contained portfolio website built with HTML and CSS.
+              The site uses a responsive dark design and requires no
+              JavaScript, frameworks, or external dependencies.
+            </p>
+
+            <div class="technology">
+              HTML · CSS · RESPONSIVE DESIGN
+            </div>
+          </article>
+
+
+          <!-- PROJECT 2 -->
+          <article class="project">
+            <span class="project-number">
+              PROJECT 02
+            </span>
+
+            <h3>Automated Backup Script</h3>
+
+            <p>
+              A Bash backup solution designed to automate recurring backups
+              using cron. The project provides practical experience with
+              shell scripting, scheduled jobs, file management, and Linux
+              automation.
+            </p>
+
+            <div class="technology">
+              BASH · CRON · LINUX · AUTOMATION
+            </div>
+          </article>
+
+
+          <!-- PROJECT 3 -->
+          <article class="project">
+            <span class="project-number">
+              PROJECT 03
+            </span>
+
+            <h3>Self-Hosted AI Server</h3>
+
+            <p>
+              A self-hosted AI server running on Rocky Linux. This project
+              provides hands-on experience with Linux services, networking,
+              storage, server configuration, and maintaining a self-hosted
+              application.
+            </p>
+
+            <div class="technology">
+              ROCKY LINUX · NETWORKING · STORAGE · SERVICES
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>
+        &copy; 2026 [YOUR NAME] · Linux Systems Administrator in Training
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
